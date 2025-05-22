@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização do Mapa da Romênia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mapa da Romênia - Visualização do Grafo</h1>
+        <div class="canvas-container">
+            <canvas id="mapCanvas"></canvas>
+        </div>
+        <div class="controls">
+            <label for="originSelect">Origem:</label>
+            <select id="originSelect"></select>
+            <label for="destSelect">Destino:</label>
+            <select id="destSelect"></select>
+            <button id="startSearch">Iniciar Busca Gulosa</button>
+            <div id="pathInfo"></div>
+            <div id="explanation" style="margin-top:20px; color:#444; font-size:15px;"></div>
+        </div>
+    </div>
+    <script src="graph.js"></script>
+    <script src="visualization.js"></script>
+</body>
+</html> 
